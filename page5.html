@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+			
+			<title>Contact Us</title>
+			
+				<!--
+				Project Name:	Beach Vacation
+				File Name:	page5.html
+				Author: Katie King
+				Date:	5/17/18
+				-->
+				
+				<link rel="stylesheet" href="styles.css">
+				
+		</head>
+		
+		<body>
+		
+			<div class="image">
+			
+				<div class="text">
+			
+					<h1>Contact Infomation</h1>
+					
+				</div>
+				
+			</div>
+			
+				<a href="index.html"><button>Home</button></a>
+				
+				<a href="page1.html"><button>Shopping</button></a>
+				
+				<a href="page2.html"><button>About Us</button></a>
+				
+				<a href="page3.html"><button>Deals</button></a>
+				
+				<a href="page4.html"><button>Locations</button></a>
+				
+				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+				
+				<div class="form-group" style="background-color: #1970aa; color: #e3dda3;">
+					Contact Us
+				</div>
+				
+				<div class="form-group">
+				
+					<label for="usr">Email:</label>
+					
+					<input type="text" class="form-control" id="usr">
+					
+				</div>
+				
+				<div class="form-group">
+				
+					<label for="pwd">Subject:</label>
+					
+					<input class="form-control" id="pwd">
+					
+				</div>
+				
+				<div class="form-group">
+				
+					<label for="comment">Comment:</label>
+					
+					<textarea class="form-control" rows="1" id="comment"></textarea>
+					
+				</div>
+				
+				<div class="div2">
+				
+					<p>Phone Number: (305) 682-3597 (Florida) <br />
+					(310) 824-9537 (California)</p>
+					
+					<p>Email: <a href="mailto:beachshack@gmail.com">The Beach Shack</a></p>
+					
+					<p>Adress: 158-174 W Central Blvd
+					Cape Canaveral, FL 32920 <br />
+					16719-16769 Algonquin St, Huntington Beach, CA 92649</p>
+					
+				</div>
+				
+					<br />
+					
+					<br />
+			
+			<footer>Katie King | &copy; | 2018</footer>
+			
+			<script>
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("myBtn").style.display = "block";
+					} else {
+						document.getElementById("myBtn").style.display = "none";
+					}
+				}
+
+					function topFunction() {
+						document.documentElement.scrollTop = 0;
+					}
+			
+			</script>
+			
+		</body>
+		
+</html>

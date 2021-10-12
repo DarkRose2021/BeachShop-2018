@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+			
+			<title>Deals</title>
+			
+				<!--
+				Project Name:	Beach Vacation
+				File Name:	page3.html
+				Author: Katie King
+				Date:	5/17/18
+				-->
+				
+				<link rel="stylesheet" href="styles.css">
+				
+				<style>
+					html {
+						box-sizing: border-box;
+					}
+
+					*, *:before, *:after {
+						box-sizing: inherit;
+					}
+
+					.column {
+						float: left;
+						width: 33.3%;
+						margin-bottom: 16px;
+						padding: 0 8px;
+					}
+
+					@media screen and (max-width: 650px) {
+						.column {
+							width: 100%;
+							display: block;
+						}
+					}
+
+					.card {
+						box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+					}
+
+					.container {
+						padding: 0 16px;
+						background-color: #1970aa;
+					}
+
+					.container::after, .row::after {
+						content: "";
+						clear: both;
+						display: table;
+					}
+
+					.button {
+						border: none;
+						outline: 0;
+						display: inline-block;
+						color: white;
+						background-color: #000;
+						text-align: center;
+						cursor: pointer;
+					}
+
+					.button:hover {
+						background-color: #555;
+					}
+					
+				</style>
+		</head>
+		
+		<body>
+		
+			<div class="image">
+			
+				<div class="text">
+			
+					<h1>Deals</h1>
+					
+				</div>
+				
+			</div>
+			
+				<a href="index.html"><button>Home</button></a>
+				
+				<a href="page1.html"><button>Shopping</button></a>
+				
+				<a href="page2.html"><button>About Us</button></a>
+				
+				<a href="page4.html"><button>Locations</button></a>
+				
+				<a href="page5.html"><button>Contact Us</button></a>
+				
+				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+				
+				<div class="row">
+				
+					<div class="column">
+					
+						<div class="card">
+						
+							<img src="Assets/sg.jpg" alt="Sun Glasses" style="width:100%">
+							
+							<div class="container">
+							
+								<h2>Sunglasses</h2>
+								
+								<p>All sunglasses are 10% off.</p>
+								
+								<p>Grand Opening Sale</p>
+								
+								<p><a href="html_demo.html#C4"><button class="button">Buy</button></a></p>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="column">
+					
+						<div class="card">
+						
+							<img src="Assets/bt.jpg" alt="Beach Towel" style="width:100%; height:408px;">
+							
+							<div class="container">
+							
+								<h2>Beach Towels</h2>
+								
+								<p>30% off</p>
+								
+								<p>Grand Opening Sale</p>
+								
+								<p><a href="html_demo.html#C4"><button class="button">Buy</button></a></p>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+  
+					<div class="column">
+					
+						<div class="card">
+						
+							<img src="Assets/sb.jpg" alt="Surfboard" style="width:100%">
+							
+							<div class="container">
+							
+								<h2>Surfboards &amp; Body boards</h2>
+								
+								<p>10% off on rentals | 15% off if bought</p>
+								
+								<p>Grand Opening Sale</p>
+								
+								<p><a href="html_demo.html#C4"><button class="button">Buy</button></a></p>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+					<div class="column">
+					
+						<div class="card">
+						
+							<img src="Assets/4sg.jpg" alt="Shot glasses" style="width:100%">
+							
+							<div class="container">
+							
+								<h2>Shot Glasses</h2>
+								
+								<p>All shot glasses are 30% off.</p>
+								
+								<p>Grand Opening Sale</p>
+								
+								<p><a href="page1.html#sg"><button class="button">Buy</button></a></p>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+				
+					<div class="column">
+					
+						<div class="card">
+						
+							<img src="Assets/bsp.jpg" alt="Bathing Suits" style="width:100%; height:410px;">
+							
+							<div class="container">
+							
+								<h2>Bathing Suits</h2>
+								
+								<p>All Bathing Suits are 30% off. (Does not include custom bathing suits)</p>
+								
+								<p>Grand Opening Sale</p>
+								
+								<p><a href="page1.html#sg"><button class="button">Buy</button></a></p>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+			
+			<footer>Katie King | &copy; | 2018</footer>
+			
+			<script>
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("myBtn").style.display = "block";
+					} else {
+						document.getElementById("myBtn").style.display = "none";
+					}
+				}
+
+					function topFunction() {
+						document.documentElement.scrollTop = 0;
+					}
+			
+			</script>
+			
+		</body>
+		
+</html>

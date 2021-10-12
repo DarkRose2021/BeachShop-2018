@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+			
+			<title>Shopping</title>
+			
+				<!--
+				Project Name:	Beach Vacation
+				File Name:	page1.html
+				Author: Katie King
+				Date:	5/17/18
+				-->
+				
+				<link rel="stylesheet" href="styles.css">
+				
+				<style>
+					.dropbtn {
+						background-color: #136296;
+						color: white;
+						font-size: 35px;
+						border: none;
+						width: 100%;
+						margin-left: 5px;
+					}
+
+					.dropdown {
+						display: inline-block;
+						width: 100%;
+						margin-left: 0px;
+					}
+
+					.dropdown-content {
+						display: none;
+						position: absolute;
+						background-color: #b5dadb;
+						min-width: 160px;
+						box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+						z-index: 1;
+						margin-left: 50%;
+					}
+
+					.dropdown-content a {
+						color: black;
+						padding: 12px 16px;
+						text-decoration: none;
+						display: block;
+					}
+
+					.dropdown-content a:hover {background-color: #136296}
+
+					.dropdown:hover .dropdown-content {
+						display: block;
+					}
+
+					.dropdown:hover .dropbtn {
+						background-color: white;
+					}
+				</style>
+		</head>
+		
+		<body>
+		
+			<div class="image">
+			
+				<div class="text">
+			
+					<h1>Shopping</h1>
+						
+				</div>
+					
+			</div>
+			
+				<a href="index.html"><button>Home</button></a>
+				
+				<a href="page2.html"><button>About Us</button></a>
+				
+				<a href="page3.html"><button>Deals</button></a>
+				
+				<a href="page4.html"><button>Locations</button></a>
+				
+				<a href="page5.html"><button>Contact Us</button></a>
+				
+				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+				
+					<div class="dropdown">
+					
+						<button class="dropbtn">Go to</button>
+						
+							<div class="dropdown-content">
+							
+								<a href="#sg">Sunglasses</a>
+								
+								<a href="#t">Towels</a>
+								
+								<a href="#r">Rentals</a>
+								
+								<a href="#SG">Shot Glasses</a>
+								
+								<a href="#bs">Bathing Suits</a>
+								
+								<a href="#bt">Beach Toys</a>
+								
+								<a href="#h">Hats</a>
+								
+								<a href="#ts">T-shirts</a>
+							
+							</div>
+				
+					<dl><!--&#36; Dollar sign-->
+					
+						<dt id="sg">Sunglasses</dt>
+						
+							<dd>We have many different brands of sunglasses. The majority of them are &#36;14.99.<br />
+							There is currently a sale on sunglasses.</dd>
+							
+							<img src="Assets/sg2.jpg" alt="Sunglasses" width="375px" style="margin-left: 50px;">
+						
+						<dt id="t">Towels</dt>
+							
+							<dd>We have long towels, circle ones, solid colors, patterns, and you can customize them for an extra &#36;5.00. 
+							Normal price is &#36;8.99.<br />
+							There is currently a sale on towels.</dd>
+							
+							<img src="Assets/bt2.jpg" alt="Beach Towels" width="375px" style="margin-left: 50px;">
+							
+						<dt id="r">Rentals</dt>
+						
+							<dd>We will rent Surfboards and body boards for &#36;4.00 an hour. If you want to buy one it's &#36;50.99.<br />
+							There is currently a sale on rentals.</dd>
+							
+							<img src="Assets/bbsb.jpg" alt="Bodyboards and surf boards" width="375px" style="margin-left: 50px;">
+							
+						<dt id="SG">Shot Glasses</dt>
+						
+							<dd>We have these wave shot glasses that you can personalize with names. &#36;5.99 without personlization &amp; &#36;7.99 with personlization.
+							There is currently a sale on shot glasses.</dd>
+							
+							<img src="Assets/4sg.jpg" alt="Shot Glasses" width="375px" style="margin-left: 50px;">
+							
+						<dt id="bs">Bathing Suits</dt>
+						
+							<dd>We have all kinds of different styles &amp; in bathing suits for &#36;10.99 for adults and &#36;5.99 for kids. 
+							Personlization is avaible for &#36;3.99 plus the price of the bathing suit.</dd>
+							
+							<img src="Assets/bsp.jpg" alt="Sunglasses" width="375px" style="margin-left: 50px;">
+							
+						<dt id="bt">Beach Toys</dt>
+						
+							<dd>If you bring your kids to the beach then you should get toys for them because they'll beable to make their own sand castle. 
+							Prices may vary.</dd>
+							
+							<img src="Assets/bts.jpg" alt="Toys for the sand" width="375px" style="margin-left: 50px;">
+							
+						<dt id="h">Hats</dt>
+						
+							<dd>We have sun hats, snapbacks, &amp; more for &#36;5.99. We offer personalizing for &#36;2.99 added.</dd>
+							
+							<img src="Assets/hp.jpg" alt="Sunglasses" width="375px" style="margin-left: 50px;">
+							
+						<dt id="ts">T-shirts</dt>
+						
+							<dd>We have many different styles and colors for &#36;6.99. You can personalize it for &#36;2.99 extra.</dd>
+							
+							<img src="Assets/pibs.jpg" alt="Sunglasses" width="375px" style="margin-left: 50px;">
+						
+					</dl>	
+			<footer>Katie King | &copy; | 2018</footer>
+			
+			<script>
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("myBtn").style.display = "block";
+					} else {
+						document.getElementById("myBtn").style.display = "none";
+					}
+				}
+
+					function topFunction() {
+						document.documentElement.scrollTop = 0;
+					}
+			
+			</script>
+			
+		</body>
+		
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+			
+			<title>Locations</title>
+			
+				<!--
+				Project Name:	Beach Vacation
+				File Name:	index.html
+				Author: Katie King
+				Date:	5/17/18
+				-->
+				
+				<link rel="stylesheet" href="styles.css">
+	
+		</head>
+		
+		<body>
+		
+			<div class="image">
+			
+				<div class="text">
+			
+					<h1>Locations</h1>
+					
+				</div>
+				
+			</div>
+			
+				<a href="index.html"><button>Home</button></a>
+				
+				<a href="page1.html"><button>Shopping</button></a>
+				
+				<a href="page2.html"><button>About Us</button></a>
+				
+				<a href="page3.html"><button>Deals</button></a>
+				
+				<a href="page5.html"><button>Contact Us</button></a>
+				
+				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+				
+				<div class="div" style="text-align: center;">
+				
+					<h2>We have 2 locations</h2>
+				
+					<h3>Flordia:</h3>
+						
+						<p>158-174 W Central Blvd
+						Cape Canaveral, FL 32920</p>
+						
+					<h3>California:</h3>
+					
+						<p>16719-16769 Algonquin St, Huntington Beach, CA 92649</p>
+						
+				</div>
+				
+				<br />
+				
+				<br />
+			
+			<footer>Katie King | &copy; | 2018</footer>
+			
+			<script>
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("myBtn").style.display = "block";
+					} else {
+						document.getElementById("myBtn").style.display = "none";
+					}
+				}
+
+					function topFunction() {
+						document.documentElement.scrollTop = 0;
+					}
+			
+			</script>
+			
+		</body>
+		
+</html>
